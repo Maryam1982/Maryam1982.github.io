@@ -1,0 +1,46 @@
+//COLOR VARIABLES
+$color-grey-1: #f8f9fa;
+$color-grey-2: #e9ecef;
+$color-grey-3: #dee2e6;
+$color-grey-4: #ced4da;
+$color-grey-5: #adb5bd;
+$color-grey-6: #6c757d;
+$color-grey-7: #495057;
+$color-grey-8: #495057;
+$color-grey-9: #343a40;
+$color-grey-10: #212529;
+$color-grey-11: #121212;
+
+$color-accent-1: #00cecb;
+$color-accent-2: #ffed66;
+$color-accent-3: #ff5e5b;
+$color-accent-4: #03dac6;
+$color-accent-5: #3700b3;
+$color-accent-6: #bb86fc;
+
+//FONT VARIABLES
+$font-header: "Marcellus", sans-serif;
+$font-text: "Rubik", sans-serif;
+$font-header-size: 2.5rem;
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: $font-text, sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  background-color: #121212;
+  color: #f8f9fa;
+  padding: 0 3rem 0 3rem;
+  box-sizing: border-box;
+}

@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Marcellus&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,700&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="navigation">
+      <div class="navigation__mobile">
+        <input type="checkbox" class="navigation__checkbox" id="nav-toggle" />
+        <label for="nav-toggle" class="navigation__button"
+          ><span class="navigation__icon">&nbsp;</span></label
+        >
+        <div class="navigation__background">&nbsp;</div>
+        <nav class="navigation__mobile-nav">
+          <ul class="navigation__mobile-nav-list">
+            <li class="navigation__mobile-nav-item">
+              <a
+                href="#about"
+                class="navigation__mobile-nav-link"
+                onclick="linkClick()"
+                >About Me</a
+              >
+            </li>
+            <li class="navigation__mobile-nav-item">
+              <a
+                href="#prof-projs"
+                class="navigation__mobile-nav-link"
+                onclick="linkClick()"
+                >Professional Projects</a
+              >
+            </li>
+            <li class="navigation__mobile-nav-item">
+              <a
+                href="#guided-projs"
+                class="navigation__mobile-nav-link"
+                onclick="linkClick()"
+                >Guided Projects</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <nav class="navigation__nav">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="#about" class="navigation__link" title="About Me"
+              >About Me</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a
+              href="#prof-projs"
+              class="navigation__link"
+              title="Professional Projects"
+              >Professional Projects</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a
+              href="#guided-projs"
+              class="navigation__link"
+              title="Course Projects"
+              >Guided Projects</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header" id="about">
+      <div class="header__text">
+        <h1 class="header__title">Welcome to my site!</h1>
+        Hello there! Here I share some of my works (design/development). Some
+        are my professional works and others are guided projects I have done as
+        part of my online courses (still did from scratch). Tools and
+        technologies I have used:<br />
+        <span class="header__tech"></span>
+      </div>
+      <div class="header__image-container">
+        <div class="header__card">
+          <div class="header__card-inner header__rotate">
+            <div class="header__card-front">
+              <img
+                src="img/images/195/images/195_01.jpg"
+                class="header__card-image"
+              />
+            </div>
+            <div class="header__card-back">
+              <img
+                src="img/images/168/images/168_01.jpg"
+                class="header__card-image"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="header__card">
+          <div class="header__card-inner header__rotate">
+            <div class="header__card-front">
+              <img
+                src="img/images/195/images/195_02.jpg"
+                class="header__card-image"
+              />
+            </div>
+            <div class="header__card-back">
+              <img
+                src="img/images/168/images/168_02.jpg"
+                class="header__card-image"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="header__card">
+          <div class="header__card-inner header__rotate">
+            <div class="header__card-front">
+              <img
+                src="img/images/195/images/195_03.jpg"
+                class="header__card-image"
+              />
+            </div>
+            <div class="header__card-back">
+              <img
+                src="img/images/168/images/168_03.jpg"
+                class="header__card-image"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="header__card">
+          <div class="header__card-inner header__rotate">
+            <div class="header__card-front">
+              <img
+                src="img/images/195/images/195_04.jpg"
+                class="header__card-image"
+              />
+            </div>
+            <div class="header__card-back">
+              <img
+                src="img/images/168/images/168_04.jpg"
+                class="header__card-image"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="header__card">
+          <div class="header__card-inner header__rotate">
+            <div class="header__card-front">
+              <img
+                src="img/images/195/images/195_05.jpg"
+                class="header__card-image"
+              />
+            </div>
+            <div class="header__card-back">
+              <img
+                src="img/images/168/images/168_05.jpg"
+                class="header__card-image"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="header__card">
+          <div class="header__card-inner header__rotate">
+            <div class="header__card-front">
+              <img
+                src="img/images/195/images/195_06.jpg"
+                class="header__card-image"
+              />
+            </div>
+            <div class="header__card-back">
+              <img
+                src="img/images/168/images/168_06.jpg"
+                class="header__card-image"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="header__card">
+          <div class="header__card-inner header__rotate">
+            <div class="header__card-front">
+              <img
+                src="img/images/195/images/195_07.jpg"
+                class="header__card-image"
+              />
+            </div>
+            <div class="header__card-back">
+              <img
+                src="img/images/168/images/168_07.jpg"
+                class="header__card-image"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="header__card">
+          <div class="header__card-inner header__rotate">
+            <div class="header__card-front">
+              <img
+                src="img/images/195/images/195_08.jpg"
+                class="header__card-image"
+              />
+            </div>
+            <div class="header__card-back">
+              <img
+                src="img/images/168/images/168_08.jpg"
+                class="header__card-image"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="header__card">
+          <div class="header__card-inner header__rotate">
+            <div class="header__card-front">
+              <img
+                src="img/images/195/images/195_09.jpg"
+                class="header__card-image"
+              />
+            </div>
+            <div class="header__card-back">
+              <img
+                src="img/images/168/images/168_09.jpg"
+                class="header__card-image"
+              />
+            </div>
+          </div>
+        </div>
+        <!-- <img
+          src="img/pretty-smiling-joyfully-female-with-fair-hair-dressed-casually-looking-with-satisfaction.jpg"
+          class="header__image"
+        /> -->
+      </div>
+    </div>
+    <section class="professional-projects" id="prof-projs">
+      <div class="professional-projects__demo">
+        <!-- <img
+          class="professional-projects__demo-video"
+          src="img/businessman-holding-user-interface-screens-with-icon-stats-data-3d-rendering.jpg"
+        /> -->
+        <video class="professional-projects__demo-video" controls>
+          <source src="./img/demo.webm" type="video/webm" />
+          <source src="./img/demo.mp4" type="video/mp4" />
+        </video>
+        <div class="professional-projects__demo-desc">
+          <h3 class="professional-projects__section-title">
+            Risk Management App
+          </h3>
+          <div class="professional-projects__section-text">
+            This web application was developed for an Oil consulting firm. They
+            were using project management tools like Oracle Primavera in
+            conjunction with Microsoft Excel but was looking for a solution to
+            combine those functionalities also adding new ones one of which is
+            simulation of all possible paths(consisting of
+            tasks,risks,solutions) alongside corresponsing cost and time. You
+            can see this in action in demo (Analytics/simulation). Because of
+            all complicated data structures (drag/drop tree-home page) and all
+            those charts I had to use third party components (Kendo
+            React-Telerik). Our tech stack is SQL Server + ASP.net for backend
+            and React for frontend.
+          </div>
+        </div>
+      </div>
+      <div class="professional-projects__design-development">
+        <h3 class="professional-projects__section-title">
+          Web Design and Development
+        </h3>
+        <div class="professional-projects__design-development-container">
+          <div class="professional-projects__project">
+            <img
+              src="./img/projects/Screenshot 2024-01-29 at 22-25-04 Flow5.png"
+              class="professional-projects__project-image"
+            />
+            <div class="professional-projects__project-hover">
+              <div class="professional-projects__project-hover-inner">
+                <ul class="professional-projects__techList">
+                  <li class="professional-projects__techListItem">Photoshop</li>
+                  <li class="professional-projects__techListItem">
+                    Illustrator
+                  </li>
+                  <li class="professional-projects__techListItem">HTML5</li>
+                  <li class="professional-projects__techListItem">CSS3</li>
+                  <li class="professional-projects__techListItem">
+                    JavaScript
+                  </li>
+                  <li class="professional-projects__techListItem">
+                    Responsive
+                  </li>
+                </ul>
+                <a
+                  href="https://maryam1982.github.io/flow5-project/"
+                  target="_blank"
+                >
+                  <button class="btn btn--cta">On Github</button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="professional-projects__project">
+            <img
+              src="./img/projects/Screenshot 2024-01-29 at 22-26-17 Screenshot.png"
+              class="professional-projects__project-image"
+            />
+            <div class="professional-projects__project-hover">
+              <div class="professional-projects__project-hover-inner">
+                <ul class="professional-projects__techList">
+                  <li class="professional-projects__techListItem">Photoshop</li>
+                  <li class="professional-projects__techListItem">
+                    Illustrator
+                  </li>
+                  <li class="professional-projects__techListItem">HTML5</li>
+                  <li class="professional-projects__techListItem">CSS3</li>
+                  <li class="professional-projects__techListItem">
+                    JavaScript
+                  </li>
+                  <li class="professional-projects__techListItem">
+                    Responsive
+                  </li>
+                </ul>
+                <a
+                  href="https://maryam1982.github.io/MaxTravel/"
+                  target="_blank"
+                >
+                  <button class="btn btn--cta">On Github</button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="professional-projects__project">
+            <img
+              src="./img/projects/Screenshot 2024-01-29 at 22-36-07 Heather Schmitt Arts – Explore Heather’s works.png"
+              class="professional-projects__project-image"
+            />
+            <div class="professional-projects__project-hover">
+              <div class="professional-projects__project-hover-inner">
+                <ul class="professional-projects__techList">
+                  <li class="professional-projects__techListItem">Photoshop</li>
+                  <li class="professional-projects__techListItem">
+                    Illustrator
+                  </li>
+                  <li class="professional-projects__techListItem">HTML5</li>
+                  <li class="professional-projects__techListItem">CSS3</li>
+                  <li class="professional-projects__techListItem">
+                    JavaScript
+                  </li>
+                  <li class="professional-projects__techListItem">PHP</li>
+                  <li class="professional-projects__techListItem">Wordpress</li>
+                  <li class="professional-projects__techListItem">
+                    Responsive
+                  </li>
+                </ul>
+                <a href="http://hschmittart.com/" target="_blank">
+                  <button class="btn btn--cta">Live Site</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="professional-projects__design">
+        <h3 class="professional-projects__section-title">Web Design</h3>
+        <div class="professional-projects__design-container">
+          <div class="professional-projects__design-project">
+            <img
+              src="./img/projects/designs/168.png"
+              class="professional-projects__design-project-image"
+            />
+            <div class="professional-projects__design-project-hover">
+              <div class="professional-projects__design-project-hover-inner">
+                <img
+                  src="./img/icons/win.svg"
+                  class="professional-projects__design-project-icon"
+                />
+                <ul class="professional-projects__techList">
+                  <li class="professional-projects__techListItem">Photoshop</li>
+                  <li class="professional-projects__techListItem">
+                    Illustrator
+                  </li>
+                </ul>
+
+                <button
+                  class="btn btn--cta"
+                  data-img-src="./img/projects/designs/168.png"
+                  onclick="onFullSacleViewClick(event)"
+                >
+                  Full-scale View
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="professional-projects__design-project">
+            <img
+              src="./img/projects/designs/170.png"
+              class="professional-projects__design-project-image"
+            />
+            <div class="professional-projects__design-project-hover">
+              <div class="professional-projects__design-project-hover-inner">
+                <img
+                  src="./img/icons/win.svg"
+                  class="professional-projects__design-project-icon"
+                />
+                <ul class="professional-projects__techList">
+                  <li class="professional-projects__techListItem">Photoshop</li>
+                  <li class="professional-projects__techListItem">
+                    Illustrator
+                  </li>
+                </ul>
+
+                <button
+                  class="btn btn--cta"
+                  data-img-src="./img/projects/designs/170.png"
+                  onclick="onFullSacleViewClick(event)"
+                >
+                  Full-scale View
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="professional-projects__design-project">
+            <img
+              src="./img/projects/designs/195.png"
+              class="professional-projects__design-project-image"
+            />
+            <div class="professional-projects__design-project-hover">
+              <div class="professional-projects__design-project-hover-inner">
+                <img
+                  src="./img/icons/win.svg"
+                  class="professional-projects__design-project-icon"
+                />
+                <ul class="professional-projects__techList">
+                  <li class="professional-projects__techListItem">Photoshop</li>
+                  <li class="professional-projects__techListItem">
+                    Illustrator
+                  </li>
+                </ul>
+
+                <button
+                  class="btn btn--cta"
+                  data-img-src="./img/projects/designs/195.png"
+                  onclick="onFullSacleViewClick(event)"
+                >
+                  Full-scale View
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="professional-projects__design-project">
+            <img
+              src="./img/projects/designs/278.png"
+              class="professional-projects__design-project-image"
+            />
+            <div class="professional-projects__design-project-hover">
+              <div class="professional-projects__design-project-hover-inner">
+                <img
+                  src="./img/icons/win.svg"
+                  class="professional-projects__design-project-icon"
+                />
+                <ul class="professional-projects__techList">
+                  <li class="professional-projects__techListItem">Photoshop</li>
+                  <li class="professional-projects__techListItem">
+                    Illustrator
+                  </li>
+                </ul>
+
+                <button
+                  class="btn btn--cta"
+                  data-img-src="./img/projects/designs/278.png"
+                  onclick="onFullSacleViewClick(event)"
+                >
+                  Full-scale View
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="professional-projects__design-project">
+            <img
+              src="./img/projects/designs/312.png"
+              class="professional-projects__design-project-image"
+            />
+            <div class="professional-projects__design-project-hover">
+              <div class="professional-projects__design-project-hover-inner">
+                <img
+                  src="./img/icons/win.svg"
+                  class="professional-projects__design-project-icon"
+                />
+                <ul class="professional-projects__techList">
+                  <li class="professional-projects__techListItem">Photoshop</li>
+                  <li class="professional-projects__techListItem">
+                    Illustrator
+                  </li>
+                </ul>
+
+                <button
+                  class="btn btn--cta"
+                  data-img-src="./img/projects/designs/312.png"
+                  onclick="onFullSacleViewClick(event)"
+                >
+                  Full-scale View
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="professional-projects__design-project">
+            <img
+              src="./img/projects/designs/350.png"
+              class="professional-projects__design-project-image"
+            />
+            <div class="professional-projects__design-project-hover">
+              <div class="professional-projects__design-project-hover-inner">
+                <img
+                  src="./img/icons/win.svg"
+                  class="professional-projects__design-project-icon"
+                />
+                <ul class="professional-projects__techList">
+                  <li class="professional-projects__techListItem">Photoshop</li>
+                  <li class="professional-projects__techListItem">
+                    Illustrator
+                  </li>
+                </ul>
+
+                <button
+                  class="btn btn--cta"
+                  data-img-src="./img/projects/designs/350.png"
+                  onclick="onFullSacleViewClick(event)"
+                >
+                  Full-scale View
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="professional-projects__design-project">
+            <img
+              src="./img/projects/designs/351.png"
+              class="professional-projects__design-project-image"
+            />
+            <div class="professional-projects__design-project-hover">
+              <div class="professional-projects__design-project-hover-inner">
+                <img
+                  src="./img/icons/win.svg"
+                  class="professional-projects__design-project-icon"
+                />
+                <ul class="professional-projects__techList">
+                  <li class="professional-projects__techListItem">Photoshop</li>
+                  <li class="professional-projects__techListItem">
+                    Illustrator
+                  </li>
+                </ul>
+
+                <button
+                  class="btn btn--cta"
+                  data-img-src="./img/projects/designs/351.png"
+                  onclick="onFullSacleViewClick(event)"
+                >
+                  Full-scale View
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="professional-projects__design-project">
+            <img
+              src="./img/projects/designs/392.png"
+              class="professional-projects__design-project-image"
+            />
+            <div class="professional-projects__design-project-hover">
+              <div class="professional-projects__design-project-hover-inner">
+                <img
+                  src="./img/icons/win.svg"
+                  class="professional-projects__design-project-icon"
+                />
+                <ul class="professional-projects__techList">
+                  <li class="professional-projects__techListItem">Photoshop</li>
+                  <li class="professional-projects__techListItem">
+                    Illustrator
+                  </li>
+                </ul>
+
+                <button
+                  class="btn btn--cta"
+                  data-img-src="./img/projects/designs/392.png"
+                  onclick="onFullSacleViewClick(event)"
+                >
+                  Full-scale View
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="professional-projects__design-project">
+            <img
+              src="./img/projects/designs/398.png"
+              class="professional-projects__design-project-image"
+            />
+            <div class="professional-projects__design-project-hover">
+              <div class="professional-projects__design-project-hover-inner">
+                <img
+                  src="./img/icons/win.svg"
+                  class="professional-projects__design-project-icon"
+                />
+                <ul class="professional-projects__techList">
+                  <li class="professional-projects__techListItem">Photoshop</li>
+                  <li class="professional-projects__techListItem">
+                    Illustrator
+                  </li>
+                </ul>
+
+                <button
+                  class="btn btn--cta"
+                  data-img-src="./img/projects/designs/398.png"
+                  onclick="onFullSacleViewClick(event)"
+                >
+                  Full-scale View
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="professional-projects__design-project">
+            <img
+              src="./img/projects/designs/215.png"
+              class="professional-projects__design-project-image"
+            />
+            <div class="professional-projects__design-project-hover">
+              <div class="professional-projects__design-project-hover-inner">
+                <ul class="professional-projects__techList">
+                  <li class="professional-projects__techListItem">Photoshop</li>
+                  <li class="professional-projects__techListItem">
+                    Illustrator
+                  </li>
+                </ul>
+
+                <button
+                  class="btn btn--cta"
+                  data-img-src="./img/projects/designs/215.png"
+                  onclick="onFullSacleViewClick(event)"
+                >
+                  Full-scale View
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="course-projects" id="guided-projs">
+      <h3 class="course-projects__section-title">Guided Projects</h3>
+      <div class="course-projects__container">
+        <div class="course-projects__project">
+          <img
+            src="./img/course projects/Screenshot 2024-02-05 at 19-29-20 Omnifood — Never cook again!.png"
+            class="course-projects__project-image"
+          />
+          <div class="course-projects__project-hover">
+            <div class="course-projects__project-hover-inner">
+              <ul class="course-projects__techList">
+                <li class="course-projects__techListItem">HTML</li>
+                <li class="course-projects__techListItem">CSS3</li>
+                <li class="course-projects__techListItem">JavaScript</li>
+              </ul>
+
+              <a href="https://maryam1982.github.io/omnifood/" target="_blank">
+                <button class="btn btn--cta">On Github</button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="course-projects__project">
+          <img
+            src="./img/course projects/Screenshot 2024-02-05 at 19-56-37 Natours Exciting tours for adventurous people.png"
+            class="course-projects__project-image"
+          />
+          <div class="course-projects__project-hover">
+            <div class="course-projects__project-hover-inner">
+              <ul class="course-projects__techList">
+                <li class="course-projects__techListItem">HTML</li>
+                <li class="course-projects__techListItem">CSS3</li>
+                <li class="course-projects__techListItem">SCSS</li>
+              </ul>
+
+              <a href="https://maryam1982.github.io/Natours/" target="_blank">
+                <button class="btn btn--cta">On Github</button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="course-projects__project course-projects__project--auto-height"
+        >
+          <img
+            src="./img/course projects/Screenshot 2024-02-05 at 20-01-03 trillo — Your all-in-one booking app.png"
+            class="course-projects__project-image--scale-down"
+          />
+          <div class="course-projects__project-hover">
+            <div class="course-projects__project-hover-inner">
+              <ul class="course-projects__techList">
+                <li class="course-projects__techListItem">HTML</li>
+                <li class="course-projects__techListItem">CSS3</li>
+                <li class="course-projects__techListItem">SCSS</li>
+              </ul>
+
+              <a
+                href="https://maryam1982.github.io/Trillo-app/"
+                target="_blank"
+              >
+                <button class="btn btn--cta">On Github</button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="course-projects__project course-projects__project--auto-height"
+        >
+          <img
+            src="./img/course projects/Screenshot 2024-02-05 at 20-08-05 React App.png"
+            class="course-projects__project-image--scale-down"
+          />
+          <div class="course-projects__project-hover">
+            <div class="course-projects__project-hover-inner">
+              <ul class="course-projects__techList">
+                <li class="course-projects__techListItem">React</li>
+                <li class="course-projects__techListItem">API</li>
+                <li class="course-projects__techListItem">Data Handling</li>
+              </ul>
+
+              <a
+                href="https://maryam1982.github.io/react-repo/"
+                target="_blank"
+              >
+                <button class="btn btn--cta">On Github</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div id="full-scale-container" onclick="onCloseFullScaleView()">
+      <button class="btn btn--close" onclick="onCloseFullScaleView()">
+        &times;
+      </button>
+      <img id="full-scale-img" />
+    </div>
+    <footer class="footer">&copy;2024 All rights reserved.</footer>
+    <script src="./script.js"></script>
+  </body>
+</html>

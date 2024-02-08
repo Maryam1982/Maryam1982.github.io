@@ -1,0 +1,20 @@
+.btn {
+  padding: 1rem 2.5rem;
+  border-radius: 2rem;
+  font-size: 1.6rem;
+  border: none;
+
+  &--cta {
+    background-color: $color-accent-5;
+    color: $color-grey-1;
+  }
+
+  &--close {
+    background-color: transparent;
+    font-size: 4rem;
+  }
+}
+
+.btn:hover {
+  cursor: pointer;
+}

@@ -1,0 +1,170 @@
+.course-projects {
+  padding: 8rem 3rem;
+  text-align: center;
+  margin-top: 12rem;
+
+  &__section-title {
+    font-family: $font-header;
+    font-size: 2.5rem;
+    letter-spacing: 0.2rem;
+  }
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-top: 7.5rem;
+  }
+
+  &__project-image {
+    object-fit: cover;
+    width: 100%;
+    height: -webkit-fill-available;
+    object-position: top;
+    &--scale-down {
+      object-fit: fill;
+      width: 100%;
+      height: -webkit-fill-available;
+      object-position: top;
+    }
+  }
+
+  &__project {
+    height: 45rem;
+    position: relative;
+  }
+
+  &__project:hover &__project-hover::before {
+    opacity: 0.75;
+  }
+
+  &__project:hover &__project-hover {
+    opacity: 1;
+    z-index: 10;
+  }
+
+  &__project:hover &__techList {
+    display: flex;
+  }
+
+  &__project-hover {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    opacity: 0;
+  }
+
+  &__project-hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+  }
+
+  &__project-hover-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 2rem;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__techList {
+    list-style: none;
+    column-gap: 2rem;
+    display: none;
+  }
+
+  &__techListItem {
+    padding: 0.5rem 1rem;
+    border: 2px solid #00cecb;
+    border-radius: 10rem;
+    background-color: transparent;
+    font-size: 1.6rem;
+    color: #00cecb;
+  }
+}
+
+@media screen and (max-width: 69.25em) {
+  .course-projects {
+    &__project-image {
+      &--scale-down {
+        object-fit: contain;
+        width: 100%;
+        height: auto;
+        object-position: top;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 63.25em) {
+  .course-projects {
+    &__project {
+      max-height: 50rem;
+    }
+  }
+}
+
+@media screen and (max-width: 53.625em) {
+  .course-projects {
+    &__project {
+      max-height: 40rem;
+    }
+  }
+}
+
+@media screen and (max-width: 47.5em) {
+  .course-projects {
+    &__project {
+      max-height: 30rem;
+    }
+  }
+}
+
+@media screen and (max-width: 40em) {
+  .course-projects {
+    &__project {
+      max-height: 25rem;
+    }
+  }
+}
+
+@media screen and (max-width: 32.5em) {
+  .course-projects {
+    &__techList {
+      row-gap: 0.5rem;
+    }
+
+    &__techListItem {
+      font-size: 1.4rem;
+    }
+
+    &__project-hover-inner {
+      row-gap: 1rem;
+    }
+
+    &__container {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    &__project {
+      max-height: 50rem;
+      &--auto-height {
+        height: auto;
+      }
+    }
+  }
+}

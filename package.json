@@ -1,0 +1,14 @@
+{
+  "name": "portfolio-site",
+  "version": "1.0.0",
+  "description": "Website to show my works",
+  "main": "script.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "Maryam Saleh",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^9.0.0"
+  }
+}
