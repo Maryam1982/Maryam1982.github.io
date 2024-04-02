@@ -586,7 +586,8 @@ body {
   border: none; }
   .btn--cta {
     background-color: #3700b3;
-    color: #f8f9fa; }
+    color: #f8f9fa;
+    text-wrap: nowrap; }
   .btn--close {
     background-color: transparent;
     font-size: 4rem; }
@@ -618,7 +619,6 @@ body {
       height: -webkit-fill-available;
       object-position: top; }
   .course-projects__project {
-    height: 45rem;
     position: relative; }
   .course-projects__project:hover .course-projects__project-hover::before {
     opacity: 0.75; }
@@ -648,6 +648,7 @@ body {
   .course-projects__project-hover-inner {
     display: flex;
     flex-direction: column;
+    flex-basis: max-content;
     justify-content: center;
     align-items: center;
     row-gap: 2rem;
@@ -665,44 +666,39 @@ body {
     border-radius: 10rem;
     background-color: transparent;
     font-size: 1.6rem;
-    color: #00cecb; }
+    color: #00cecb;
+    text-wrap: nowrap; }
 
 @media screen and (max-width: 69.25em) {
+  .course-projects__techListItem {
+    font-size: 1.4rem; }
   .course-projects__project-image--scale-down {
     object-fit: contain;
     width: 100%;
     height: auto;
     object-position: top; } }
 
-@media screen and (max-width: 63.25em) {
-  .course-projects__project {
-    max-height: 50rem; } }
-
-@media screen and (max-width: 53.625em) {
-  .course-projects__project {
-    max-height: 40rem; } }
-
 @media screen and (max-width: 47.5em) {
-  .course-projects__project {
-    max-height: 30rem; } }
+  .btn--cta {
+    font-size: 1.4rem; }
+  .course-projects__project-hover-inner {
+    row-gap: 1.5rem; } }
 
 @media screen and (max-width: 40em) {
-  .course-projects__project {
-    max-height: 25rem; } }
+  .course-projects__techListItem {
+    font-size: 1rem; } }
 
 @media screen and (max-width: 32.5em) {
   .course-projects__techList {
     row-gap: 0.5rem; }
   .course-projects__techListItem {
-    font-size: 1.4rem; }
+    font-size: 1.2rem; }
   .course-projects__project-hover-inner {
     row-gap: 1rem; }
   .course-projects__container {
     grid-template-columns: repeat(1, 1fr); }
-  .course-projects__project {
-    max-height: 50rem; }
-    .course-projects__project--auto-height {
-      height: auto; } }
+  .course-projects__project--auto-height {
+    height: auto; } }
 
 .footer {
   text-align: center;

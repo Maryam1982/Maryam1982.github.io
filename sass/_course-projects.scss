@@ -12,6 +12,7 @@
   &__container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    // grid-template-rows: repeat(auto-fill, min-content);
     gap: 2rem;
     margin-top: 7.5rem;
   }
@@ -30,7 +31,8 @@
   }
 
   &__project {
-    height: 45rem;
+    // height: 45rem;
+    // max-height: 45rem;
     position: relative;
   }
 
@@ -72,6 +74,7 @@
   &__project-hover-inner {
     display: flex;
     flex-direction: column;
+    flex-basis: max-content;
     justify-content: center;
     align-items: center;
     row-gap: 2rem;
@@ -94,11 +97,15 @@
     background-color: transparent;
     font-size: 1.6rem;
     color: #00cecb;
+    text-wrap: nowrap;
   }
 }
 
 @media screen and (max-width: 69.25em) {
   .course-projects {
+    &__techListItem {
+      font-size: 1.4rem;
+    }
     &__project-image {
       &--scale-down {
         object-fit: contain;
@@ -113,7 +120,7 @@
 @media screen and (max-width: 63.25em) {
   .course-projects {
     &__project {
-      max-height: 50rem;
+      // max-height: 50rem;
     }
   }
 }
@@ -121,23 +128,32 @@
 @media screen and (max-width: 53.625em) {
   .course-projects {
     &__project {
-      max-height: 40rem;
+      // max-height: 40rem;
     }
   }
 }
 
 @media screen and (max-width: 47.5em) {
+  .btn--cta {
+    font-size: 1.4rem;
+  }
   .course-projects {
     &__project {
-      max-height: 30rem;
+      // max-height: 30rem;
+    }
+    &__project-hover-inner {
+      row-gap: 1.5rem;
     }
   }
 }
 
 @media screen and (max-width: 40em) {
   .course-projects {
+    &__techListItem {
+      font-size: 1rem;
+    }
     &__project {
-      max-height: 25rem;
+      // max-height: 25rem;
     }
   }
 }
@@ -149,7 +165,7 @@
     }
 
     &__techListItem {
-      font-size: 1.4rem;
+      font-size: 1.2rem;
     }
 
     &__project-hover-inner {
@@ -161,7 +177,7 @@
     }
 
     &__project {
-      max-height: 50rem;
+      // max-height: 50rem;
       &--auto-height {
         height: auto;
       }
